@@ -1,17 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package org.emp.gl.timer.service;
 
 /**
- *
- * @author tina
+ * Interface qui permet d'ajouter ou retirer des observateurs de temps.
  */
 public interface TimeChangeProvider {
 
-    public void addTimeChangeListener(TimerChangeListener pl);
+    void addTimeChangeListener(TimerChangeListener listener);
 
-    public void removeTimeChangeListener(TimerChangeListener pl);
+    void removeTimeChangeListener(TimerChangeListener listener);
 }
