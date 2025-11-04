@@ -19,9 +19,10 @@ public class Horloge implements TimerChangeListener {
 
     @Override
     public void propertyChange(PropertyChangeEvent evt) {
-        System.out.println("Horloge [" + nom + "] : " +
-                evt.getPropertyName() + " -> " + evt.getNewValue() +
-                " à " + LocalTime.now());
+       System.out.println("Horloge [" + nom + "] : " +
+        evt.getPropertyName() + " -> " + evt.getNewValue() +
+        " a " + LocalTime.now());
+
     }
 
     public void stop() {

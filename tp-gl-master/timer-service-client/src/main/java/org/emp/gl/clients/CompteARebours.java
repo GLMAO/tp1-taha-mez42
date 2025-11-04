@@ -20,10 +20,11 @@ public class CompteARebours implements TimerChangeListener {
         // On ne réagit qu'au changement de seconde
         if (TimerChangeListener.SECONDE_PROP.equals(evt.getPropertyName())) {
             if (compteur > 0) {
-                System.out.println("⏳ CompteARebours [" + this.hashCode() + "] : " + compteur);
+                System.out.println(" CompteARebours [" + this.hashCode() + "] : " + compteur);
                 compteur--;
             } else {
-                System.out.println("⏰ CompteARebours [" + this.hashCode() + "] terminé !");
+                System.out.println("? CompteARebours [" + compteur + "] termine !");
+
                 timerService.removeTimeChangeListener(this);
             }
         }
